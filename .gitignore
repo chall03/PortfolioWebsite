@@ -1,0 +1,30 @@
+# Terraform sensitive files
+infrastructure/.terraform/
+infrastructure/.terraform.lock.hcl
+infrastructure/*.tfstate
+infrastructure/*.tfstate.*
+infrastructure/*.tfvars
+infrastructure/crash.log
+infrastructure/crash.*.log
+infrastructure/*.tfplan
+infrastructure/*.backup
+
+# Exceptions - allow example files
+!infrastructure/terraform.tfvars.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.local
+*.pem
+*.key
+
+# OCI config (if you have this in your project)
+.oci/

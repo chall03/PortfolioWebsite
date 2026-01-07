@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calum Hall - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Calum Hall</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Working On</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#technical">Technical Info</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="cv.pdf" class="cv-download" download>Download CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="theme-icon"> 🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Hi, I'm Calum</h1>
+        </section>
+
+        <div class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="headshot.jpeg" alt="Your Name" class="profile-image">
+                    <div class="about-text">
+                        <p>I'm a recent graduate of the University of St Andrews. Currently working at Accenture as part of the Modern Engineering Graduate Scheme</p>
+                        <p>With a strong foundation in software development, I enjoy tackling complex problems and transforming ideas into elegant, efficient code. I also have experience in Cybersecurity from an internship in the threat detection team at Lloyds Banking Group</p>
+                        <p>My other interests are guitar, rugby and reading</p>
+                        <a href="cv.pdf" class="cv-btn" download>
+                            <span>📄</span> Download My CV
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>What I'm Working On</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <span class="project-status">In Progress</span>
+                        <h3>Portfolio Website on OCI</h3>
+                        <p>Building this website using modern web technologies and hosting it on Oracle Cloud Infrastructure. Implementing infrastructure as code with Terraform and automated deployments via CI/CD pipelines.</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML/CSS/JS</span>
+                            <span class="skill-tag">OCI</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="blog">
+                <h2>Blog & Book Reviews</h2>
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-filter="all">All Posts</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
+                    <button class="filter-btn" data-filter="book-review">Book Reviews</button>
+                </div>
+                <div class="blog-posts" id="blogPosts">
+                    <div class="loading">Loading posts...</div>
+                </div>
+            </section>
+
+            <section id="technical">
+                <h2>Technical Information</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>🏗️ Infrastructure</h3>
+                        <ul>
+                            <li><strong>Hosting:</strong> OCI Object Storage</li>
+                            <li><strong>CDN:</strong> OCI Edge Services</li>
+                            <li><strong>DNS:</strong> OCI DNS Management</li>
+                            <li><strong>SSL/TLS:</strong> Let's Encrypt</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h3>⚙️ Deployment</h3>
+                        <ul>
+                            <li><strong>IaC:</strong> Terraform</li>
+                            <li><strong>CI/CD:</strong> GitHub Actions</li>
+                            <li><strong>Version Control:</strong> Git/GitHub</li>
+                            <li><strong>Automation:</strong> Automated sync on push</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h3>📊 Monitoring</h3>
+                        <ul>
+                            <li><strong>Logging:</strong> OCI Logging</li>
+                            <li><strong>Metrics:</strong> OCI Monitoring</li>
+                            <li><strong>Uptime:</strong> Health checks</li>
+                            <li><strong>Alerts:</strong> Custom notifications</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h3>💰 Cost Optimization</h3>
+                        <ul>
+                            <li><strong>Tier:</strong> Always Free eligible</li>
+                            <li><strong>Storage:</strong> Object Storage (minimal)</li>
+                            <li><strong>Bandwidth:</strong> CDN caching</li>
+                            <li><strong>Estimate:</strong> ~$0-2/month</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="github">
+                <h2>GitHub Activity</h2>
+                <div class="github-section">
+                    <div class="github-stats">
+                        <div class="github-card">
+                            <h3>Contribution Graph</h3>
+                            <p>My coding activity over the past year</p>
+                            <img src="https://ghchart.rshah.org/2563eb/chall03" alt="GitHub Contribution Graph" class="contribution-graph">
+                        </div>
+                    </div>
+                    <div class="github-link">
+                        <a href="https://github.com/chall03" target="_blank" rel="noopener noreferrer" class="github-btn">
+                            <span>🔗</span> View Full GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/chall03" target="_blank" title="GitHub">📂</a>
+            <a href="https://linkedin.com/in/calum-hall" target="_blank" title="LinkedIn">💼</a>
+            <a href="mailto:calumhall15@gmail.com" title="Email">✉️</a>
+        </div>
+        <p>&copy; 2025 Calum Hall. Built with HTML, CSS, and JavaScript. Hosted on OCI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

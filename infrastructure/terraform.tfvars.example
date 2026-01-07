@@ -1,0 +1,11 @@
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and fill in your actual values
+
+region            = "uk-london-1"
+tenancy_ocid      = "ocid1.tenancy.oc1..aaaaaaaa_YOUR_TENANCY_OCID_HERE"
+user_ocid         = "ocid1.user.oc1..aaaaaaaa_YOUR_USER_OCID_HERE"
+fingerprint       = "aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:99"
+private_key_path  = "~/.oci/oci_api_key.pem"
+compartment_ocid  = "ocid1.compartment.oc1..aaaaaaaa_YOUR_COMPARTMENT_OCID_HERE"
+domain_name       = "yourdomain.com"
+bucket_name       = "your-bucket-name"
