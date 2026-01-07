@@ -9,6 +9,11 @@ infrastructure/crash.*.log
 infrastructure/*.tfplan
 infrastructure/*.backup
 
+# Website Stuff
+website/cv.pdf
+website/blog-posts.json
+website/headshot.jpeg
+
 # Exceptions - allow example files
 !infrastructure/terraform.tfvars.example
 
