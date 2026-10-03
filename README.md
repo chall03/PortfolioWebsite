@@ -38,6 +38,23 @@ Terraform configuration for OCI static website hosting.
    terraform apply
 ```
 
+## Running Locally
+
+The site is plain HTML — no build step required. Serve it with any static file server from the `website/` directory.
+
+**Python (built-in):**
+```bash
+cd website
+python3 -m http.server 8080
+```
+Then open [http://localhost:8080](http://localhost:8080).
+
+**Node.js (`npx`):**
+```bash
+cd website
+npx serve .
+```
+
 ## Important Files
 
 - `terraform.tfvars` - **NEVER COMMIT THIS** - Contains your secrets
